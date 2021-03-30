@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import json
 import datetime
+import os
 
 import sqlalchemy
 from sqlalchemy import create_engine, func
@@ -9,17 +10,19 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 from flask import Flask, render_template
 
+from flask_sqlalchemy import SQLAlchemy
+
 from config import username, pw
 
-# ENV = 'dev'
+#create instance of flask app
+app = Flask(__name__)
 
-# if ENV == 'dev'
-#     app.config['SQLALCHEMY_DATABASE_URI'] = (f'postgresql://{username}:{pw}@localhost:5432/disneyland_db')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
 
-# else:
-#     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# Remove tracking modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
-# db = SQLalchemy(app)
+db = SQLAlchemy(app)
 
 # Reviews = create_classes(db)
 
@@ -29,8 +32,7 @@ engine = create_engine('postgresql://postgres:' +
 conn = engine.connect()
 
 
-#create instance of flask app
-app = Flask(__name__)
+
 
 @app.route("/")
 def home():
