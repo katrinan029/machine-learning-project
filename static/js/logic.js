@@ -1,5 +1,6 @@
-d3.csv('data_for_plotting.csv').then((importedData) => {
+d3.csv('static/data/data_for_plotting.csv').then((importedData) => {
   const csvData = importedData;
+  console.log(importedData);
 
 
   // histogram for rating distribution
