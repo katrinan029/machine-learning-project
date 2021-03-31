@@ -12,13 +12,13 @@
     <title>Keep It Simba'l</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="static/css/fontawesome.css">
-    <link rel="stylesheet" href="static/css/templatemo-style.css">
-    <link rel="stylesheet" href="static/css/owl.css">
+    <link rel="stylesheet" href="../static/css/fontawesome.css">
+    <link rel="stylesheet" href="../static/css/templatemo-style.css">
+    <link rel="stylesheet" href="../static/css/owl.css">
 
   </head>
 
@@ -144,17 +144,35 @@
                     <div id="histogram-rating"></div>
                   </div>
                   <div class="col-md-12">
-                    <div id="histogram-polarity"></div>
-                  </div>
-                  <div class="col-md-12">
-                    <div id="histogram-polarity-pos"></div>
-                  </div>
-                  <div class="col-md-12">
                     <div id="histogram-polarity-neg"></div>
                   </div>
                   <div class="col-md-12">
                     <div id="histogram-reviewer"></div>
                   </div>
+                  <div class="col-md-12">
+                    <div id="polarity"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div id="compound"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div id="yuh"></div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-12" style="display: flex">
+                      <div class="col-md-9"id="moneyPlot" style="height: 100%"></div>
+                      <div class="column-md-3" style="contain: content">
+                        <h6>Select a Word</h6>
+                        <select name="importantWords" id="dropbtn">Select a Word</select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12" style="display:flex; justify-content: center">
+                    <div id="dense"></div>
+                  </div>
+                </div>
+                <div class="primary-button">
+                  <a href="#">Additional Charts</a>
                 </div>
               </div>
             </section>
@@ -215,61 +233,50 @@
 
           <div class="inner">
 
-            <!-- Search Box -->
+            <!-- Search Box
             <section id="search" class="alt">
               <form method="get" action="#">
                 <input type="text" name="search" id="search" placeholder="Search..." />
               </form>
-            </section>
+            </section> -->
               
             <!-- Menu -->
             <nav id="menu">
               <ul>
                 <li><a href="index.html">Homepage</a></li>
-                <li><a href="simple_page.html">Simple Page</a></li>
-                <li><a href="shortcodes.html">Shortcodes</a></li>
-                <li>
-                  <span class="opener">Dropdown One</span>
-                  <ul>
-                    <li><a href="#">First Sub Menu</a></li>
-                    <li><a href="#">Second Sub Menu</a></li>
-                    <li><a href="#">Third Sub Menu</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <span class="opener">Dropdown Two</span>
-                  <ul>
-                    <li><a href="#">Sub Menu #1</a></li>
-                    <li><a href="#">Sub Menu #2</a></li>
-                    <li><a href="#">Sub Menu #3</a></li>
-                  </ul>
-                </li>
-                <li><a href="https://www.google.com">External Link</a></li>
+                <li><a href="https://public.tableau.com/profile/alexei.flores#!/vizhome/PresentationDraft_16171323685150/Story1?publish=yes">Additional Exploratory Charts</a></li>
+                <li>Meet the Team!</li>
               </ul>
             </nav>
 
             <!-- Featured Posts -->
-            <div class="featured-posts">
+            <div class="featured-images">
               <div class="heading">
-                <h2>Featured Posts</h2>
+                <h2>Meet the Team! </h2>
               </div>
               <div class="owl-carousel owl-theme">
-                <a href="#">
+                <a href="https://www.linkedin.com/in/jessica-ramos-molina-38a269a0/">
                   <div class="featured-item">
-                    <img src="static/assets/images/featured_post_01.jpg" alt="featured one">
-                    <p>Aliquam egestas convallis eros sed gravida. Curabitur consequat sit.</p>
+                    <img src="https://ca.slack-edge.com/T01C1SEK3L0-U01BUD1U76G-5b5f9cc1881a-512" alt="featured one">
+                    <p>I am Jessica Molina -- a Disney enthusiast. Let's get connected on LinkedIn! </p>
+                  </div>
+                <!-- </a> -->
+                <a href="https://www.linkedin.com/in/alexei-frederick-flores-b818211b7/">
+                  <div class="featured-item">
+                    <img src="https://ca.slack-edge.com/T01C1SEK3L0-U01C352JUUU-daf6e418f691-512" alt="featured two">
+                    <p>I am Alexei Flores -- I am in my natural habitat when I sing Disney songs. Let's connect! </p>
                   </div>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/ryan-murnane-691709188/">
                   <div class="featured-item">
-                    <img src="static/assets/images/featured_post_01.jpg" alt="featured two">
-                    <p>Donec a scelerisque massa. Aliquam non iaculis quam. Duis arcu turpis.</p>
+                    <img src="https://ca.slack-edge.com/T01C1SEK3L0-U01BNCB921H-3f9161ceb2d8-512" alt="featured three">
+                    <p>Hi! I am Ryan Murnane -- Disneyland is alright but I enjoy it from time to time. Let's connect!</p>
                   </div>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/katrina-nguyen-19106072/">
                   <div class="featured-item">
-                    <img src="static/assets/images/featured_post_01.jpg" alt="featured three">
-                    <p>Suspendisse ac convallis urna, vitae luctus ante. Donec sit amet.</p>
+                    <img src="https://ca.slack-edge.com/T01C1SEK3L0-U01BK49KV0V-b1238bec436c-512" alt="featured three">
+                    <p>Hi! I am Katrina Nguyen -- as a SoCal native, Disneyland Anaheim is my second home. Let's connect!</p>
                   </div>
                 </a>
               </div>
@@ -277,8 +284,7 @@
 
             <!-- Footer -->
             <footer id="footer">
-              <p class="copyright">Copyright &copy; 2019 Company Name
-              <br>Designed by <a rel="nofollow" href="https://www.facebook.com/templatemo">Template Mo</a></p>
+              <p class="copyright">Copyright &copy; 2021 SIMPLE Team
             </footer>
 
           </div>
