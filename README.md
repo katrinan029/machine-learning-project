@@ -18,3 +18,9 @@ Also, this project will explore the limitations of quantitative data; and demons
 * CSS, HTML, Bootstrap
 * PostgreSQL
 * Heroku
+
+### The Team
+* [Alexei](https://github.com/CaliFlowers)
+* [Katrina](https://github.com/katrinan029)
+* [Ryan](https://github.com/lmfao415)
+* [Jessica](https://github.com/jessicaramosmolina)
