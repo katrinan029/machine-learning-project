@@ -1,4 +1,5 @@
 # Keep it Simba’l
+![](project_logo.png)
 
 ## Machine Learning Project
 
