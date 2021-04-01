@@ -50,6 +50,10 @@ def common_bigrams():
 def filtered_common_bigrams():
     return render_template("filtered_common_bigrams.html")
 
+@app.route("/treemap")
+def treemap():
+    return render_template("treemap.html")
+
 @app.route("/disneylandreviews")
 def disneylandreviews():
 
