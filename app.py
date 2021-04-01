@@ -46,6 +46,14 @@ def sunburst():
 def citations():
     return render_template("citations.html")
 
+@app.route("/treemap")
+def citations():
+    return render_template("treemap")
+
+@app.route("/bigram")
+def citations():
+    return render_template("filteredcommonbigram")
+
 @app.route("/disneylandreviews")
 def disneylandreviews():
     engine = create_engine('postgresql://postgres:' +
