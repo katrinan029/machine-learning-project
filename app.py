@@ -38,7 +38,7 @@ conn = engine.connect()
 def home():
     return render_template("index.html")
 
-@app.route("/sunburst.html")
+@app.route("/sunburst")
 def sunburst():
     return render_template("sunburst.html")
 
