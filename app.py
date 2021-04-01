@@ -12,7 +12,7 @@ from flask import Flask, render_template
 
 from flask_sqlalchemy import SQLAlchemy
 
-from config import username, pw
+from config import *
 
 #create instance of flask app
 app = Flask(__name__)
@@ -27,8 +27,8 @@ db = SQLAlchemy(app)
 # Reviews = create_classes(db)
 
 # Create engine
-engine = create_engine('postgresql://postgres:' +
-                       pw + '@localhost:5432/disneyland_db')
+engine = create_engine('postgresql://'+username+':' +
+                       pw + '@'+host+':5432/'+database)
 conn = engine.connect()
 
 
@@ -54,14 +54,20 @@ def bigram():
 
 @app.route("/disneylandreviews")
 def disneylandreviews():
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5aff1e9e9cc994d861ae3ae3c096868d16abec51
     disneyland_reviews = pd.read_sql("SELECT * FROM reviews_data", conn)
 
     return jsonify(disneyland_reviews.to_dict("record"))
 
 @app.route("/data_for_plotting")
 def data_for_plotting():
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5aff1e9e9cc994d861ae3ae3c096868d16abec51
     data_for_plotting = pd.read_sql("SELECT * FROM data_for_plotting", conn)
 
     return jsonify(data_for_plotting.to_dict("record"))
