@@ -1,6 +1,7 @@
 # Project SIMPLE: Service Improvement through Machine Processing of Linguistic Evaluations
 ## Keep it Simba’l
 ![](project_logo.png)
+
 Customer Relations Management (CRM) has long struggled with the problem that star reviews fail to give enough nuance about what their clients/customers are really feeling. This plays into the limitations that have long plagued quantitative data. Fortunately qualitative text reviews often accompany star reviews. However, text reviews are voluminous and qualitative analysi can often be too verbose to understnd. Natural Language Processing (NLP) is one potential solution to this old quantification versus qualification debate. Linguistic analysis can inform quantitative data and reveal additional dimensions and insights about massive amounts of textual data. In this example, an example of how NLP can be leveraged to inform CRM is provided by sifting through Disneyland reviews. 
 
 ## Machine Learning Project

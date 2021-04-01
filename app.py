@@ -32,8 +32,6 @@ engine = create_engine('postgresql://postgres:' +
 conn = engine.connect()
 
 
-
-
 @app.route("/")
 def home():
     return render_template("index.html")
@@ -47,18 +45,15 @@ def citations():
     return render_template("citations.html")
 
 @app.route("/treemap")
-def citations():
-    return render_template("treemap")
+def treemap():
+    return render_template("treemap.html")
 
 @app.route("/bigram")
-def citations():
-    return render_template("filteredcommonbigram")
+def bigram():
+    return render_template("filtered_common_bigrams.html")
 
 @app.route("/disneylandreviews")
 def disneylandreviews():
-    engine = create_engine('postgresql://postgres:' +
-                       pw + '@localhost:5432/disneyland_db')
-    conn = engine.connect()
 
     disneyland_reviews = pd.read_sql("SELECT * FROM reviews_data", conn)
 
@@ -66,9 +61,6 @@ def disneylandreviews():
 
 @app.route("/data_for_plotting")
 def data_for_plotting():
-    engine = create_engine('postgresql://postgres:' +
-                       pw + '@localhost:5432/disneyland_db')
-    conn = engine.connect()
 
     data_for_plotting = pd.read_sql("SELECT * FROM data_for_plotting", conn)
 
