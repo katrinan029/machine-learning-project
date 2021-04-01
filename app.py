@@ -42,6 +42,14 @@ def home():
 def sunburst():
     return render_template("sunburst.html")
 
+@app.route("/common_bigrams")
+def common_bigrams():
+    return render_template("common_bigrams.html")
+
+@app.route("/filtered_common_bigrams")
+def filtered_common_bigrams():
+    return render_template("filtered_common_bigrams.html")
+
 @app.route("/disneylandreviews")
 def disneylandreviews():
 
