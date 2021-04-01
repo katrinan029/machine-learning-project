@@ -42,28 +42,26 @@ def home():
 def sunburst():
     return render_template("sunburst.html")
 
-@app.route("/common_bigrams")
-def common_bigrams():
-    return render_template("common_bigrams.html")
-
-@app.route("/filtered_common_bigrams")
-def filtered_common_bigrams():
-    return render_template("filtered_common_bigrams.html")
+@app.route("/citations")
+def citations():
+    return render_template("citations.html")
 
 @app.route("/treemap")
 def treemap():
     return render_template("treemap.html")
 
+@app.route("/bigram")
+def bigram():
+    return render_template("filtered_common_bigrams.html")
+
 @app.route("/disneylandreviews")
 def disneylandreviews():
-
     disneyland_reviews = pd.read_sql("SELECT * FROM reviews_data", conn)
 
     return jsonify(disneyland_reviews.to_dict("record"))
 
 @app.route("/data_for_plotting")
 def data_for_plotting():
-
     data_for_plotting = pd.read_sql("SELECT * FROM data_for_plotting", conn)
 
     return jsonify(data_for_plotting.to_dict("record"))

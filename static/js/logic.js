@@ -41,7 +41,7 @@ d3.csv('static/data/data_for_plotting.csv').then((importedData) => {
       }}
   };
   const data = [trace];
-  // Plotly.newPlot('histogram-rating', data, layout);
+  Plotly.newPlot('histogram-rating', data, layout);
 
     // histogram for polarity neutral distribution
     // let neutral = []
@@ -167,7 +167,7 @@ d3.csv('static/data/data_for_plotting.csv').then((importedData) => {
         }}
     };
     const dataCompound = [traceCompound];
-    // Plotly.newPlot('histogram-polarity-neg', dataCompound, layoutCompound);
+    Plotly.newPlot('histogram-polarity-neg', dataCompound, layoutCompound);
 
     // reviewer location
     let reviewerLocation = []
@@ -209,7 +209,7 @@ d3.csv('static/data/data_for_plotting.csv').then((importedData) => {
         }}
     };
     const dataReviewer = [traceReviewer];
-    // Plotly.newPlot('histogram-reviewer', dataReviewer, layoutReviewer);
+    Plotly.newPlot('histogram-reviewer', dataReviewer, layoutReviewer);
 })
 
 d3.csv('static/data/ReviewAnalysisRyan.csv').then(csvData => {
@@ -302,7 +302,7 @@ d3.csv('static/data/ReviewAnalysisRyan.csv').then(csvData => {
     };
 
   var data = [trace1, trace2, trace3, trace4, trace5];
-  // Plotly.newPlot('polarity', data, layout5);
+  Plotly.newPlot('polarity', data, layout5);
 
 
 // Histogram for compound values by star review
@@ -379,7 +379,7 @@ d3.csv('static/data/ReviewAnalysisRyan.csv').then(csvData => {
 
 
   var cdata = [ctrace1, ctrace2,ctrace3,ctrace4,ctrace5];
-  // Plotly.newPlot('compound', cdata, histLayout);
+  Plotly.newPlot('compound', cdata, histLayout);
 
 
 
@@ -450,7 +450,7 @@ var layout22 = {
 
 var data1 = [trace11, trace22];
 
-// Plotly.newPlot('yuh', data1, layout22);
+Plotly.newPlot('yuh', data1, layout22);
 
 var importantWords = ['money', 'hour', 'close', 'disappointed', 'love', 'great', 'waste', 'rude' ]
 var dropDownMenu = document.getElementById('dropbtn')
