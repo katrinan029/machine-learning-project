@@ -12,6 +12,8 @@ d3.csv('./ReviewAnalysis.csv').then(csvData => {
 
     var allRatings = csvData.map(x => x.Rating);
     var allPolarities = csvData.map(x => x.polarity);
+    var allCompounds = csvData.map(x => x.compound);
+
 
 
     var positiveReviews = csvData.filter(x => parseFloat(x.Rating) > 3);
@@ -114,6 +116,33 @@ var negativePolarities = negativeReviews.map(x=>x.polarity)
 var negativeCompounds = negativeReviews.map(x=>x.compound)
 
 
+var trace2a = {
+  x: positiveCompounds,
+  type: 'histogram',
+};
+
+var trace2b = {
+  x: negativeCompounds,
+  type: 'histogram',
+};
+
+var data2a = [trace2a, trace2b];
+  
+Plotly.newPlot('yeet', data2a);
+
+var trace1a = {
+  x: positivePolarities,
+  type: 'histogram',
+};
+
+var trace1b = {
+  x: negativePolarities,
+  type: 'histogram',
+};
+
+var data1a = [trace1a, trace1b];
+  
+Plotly.newPlot('yee', data1a);
 // console.log(positivePolarities)
 var trace11 = {
     x: positivePolarities,
@@ -222,9 +251,151 @@ var dtrace1 = {
   };
   Plotly.newPlot('dense', ddata, dlayout);
 
+
+  var d1trace1 = {
+    x: allCompounds,
+    y: allRatings,
+    mode: 'markers',
+    name: 'points',
+    marker: {
+      color: 'rgb(102,0,0)',
+      size: 2,
+      opacity: 0.4
+    },
+    type: 'scatter'
+  };
+  var d1trace2 = {
+    x: allCompounds,
+    y: allRatings,
+    name: 'density',
+    ncontours: 20,
+    colorscale: 'Hot',
+    reversescale: true,
+    showscale: false,
+    type: 'histogram2dcontour'
+  };
+  var d1trace3 = {
+    x: allCompounds,
+    name: 'x density',
+    marker: {color: 'rgb(102,0,0)'},
+    yaxis: 'y2',
+    type: 'histogram'
+  };
+  var d1trace4 = {
+    y: allRatings,
+    name: 'y density',
+    marker: {color: 'rgb(102,0,0)'},
+    xaxis: 'x2',
+    type: 'histogram'
+  };
+  var d1data = [d1trace1, d1trace2, d1trace3, d1trace4];
+  var d1layout = {
+    showlegend: false,
+    autosize: false,
+    width: 600,
+    height: 550,
+    margin: {t: 50},
+    hovermode: 'closest',
+    bargap: 0,
+    xaxis: {
+      domain: [0, 0.85],
+      showgrid: false,
+      zeroline: false
+    },
+    yaxis: {
+      domain: [0, 0.85],
+      showgrid: false,
+      zeroline: false
+    },
+    xaxis2: {
+      domain: [0.85, 1],
+      showgrid: false,
+      zeroline: false
+    },
+    yaxis2: {
+      domain: [0.85, 1],
+      showgrid: false,
+      zeroline: false
+    }
+  };
+  Plotly.newPlot('dense1', d1data, d1layout);
+
+
+  
+// boxplot for polarities
+
+var btrace1 = {
+  y: polarities1,
+  type: 'box'
+};
+
+var btrace2 = {
+  y: polarities2,
+  type: 'box'
+};
+
+var btrace3 = {
+  y: polarities3,
+  type: 'box'
+};
+
+var btrace4 = {
+  y: polarities4,
+  type: 'box'
+};
+
+var btrace5 = {
+  y: polarities5,
+  type: 'box'
+};
+
+var bdata = [btrace1, btrace2,btrace3,btrace4,btrace5];
+
+Plotly.newPlot('bmyDiv', bdata);
+
+
+// stuff by park
+
+var cali = csvData.filter(x=>x['Branch'] ==='Disneyland_California');
+var hk = csvData.filter(x=>x['Branch'] ==='Disneyland_HongKong');
+var paris = csvData.filter(x=>x['Branch'] ==='Disneyland_Paris');
+
+console.log(cali);
+
+var caliRatings = cali.map(x=>x.Rating);
+var hkRatings = hk.map(x=>x.Rating);
+var parisRatings = paris.map(x=>x.Rating);
+
+
+var btrace11 = {
+  y: caliRatings,
+  type: 'box'
+};
+
+var btrace22 = {
+  y: hkRatings,
+  type: 'box'
+};
+
+var btrace33 = {
+  y: parisRatings,
+  type: 'box'
+};
+
+
+
+var bdata1 = [btrace11, btrace22,btrace33];
+
+Plotly.newPlot('bmyDiv1', bdata1);
+
+
+console.log(csvData.columns);
+
+
+
+
+
 });
-
-
 
 
 
