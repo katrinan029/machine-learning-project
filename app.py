@@ -42,6 +42,10 @@ def home():
 def sunburst():
     return render_template("sunburst.html")
 
+@app.route("/citations")
+def citations():
+    return render_template("citations.html")
+
 @app.route("/disneylandreviews")
 def disneylandreviews():
     engine = create_engine('postgresql://postgres:' +
