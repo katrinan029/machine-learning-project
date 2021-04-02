@@ -16,7 +16,7 @@ We want to analyze tourism flow for Disney and help Disney qualitatively underst
 Also, this project will explore the limitations of quantitative data; and demonstrate how qualitative data from written reviews can supplement quantification. Instead of just asking questions of which and how much, textual data can open the door for finding out why the numbers are one way or another.  
 
 ### The Dataset
-The SIMPLE Team makes use of the Disneyland Reviews Kaggle Dataset which features more than 42,000 unique reviews of 3 Disneyland Parks (California, Hong Kong, Paris) on Trip Avisor recorded between 2015 and 2019. 
+The SIMPLE Team makes use of the Disneyland Reviews Kaggle [Dataset](https://www.kaggle.com/arushchillar/disneyland-reviews) which features more than 42,000 unique reviews of 3 Disneyland Parks (California, Hong Kong, Paris) on Trip Avisor recorded between 2015 and 2019. 
 
 ### Technologies 
 * Python (NLTK, PyLDAvis, nlplot, Sci-kit learn, Pandas, Matplotlib)
@@ -31,7 +31,7 @@ The SIMPLE Team makes use of the Disneyland Reviews Kaggle Dataset which feature
 * [Ryan](https://github.com/lmfao415)
 * [Jessica](https://github.com/jessicaramosmolina)
 
-### Didcussion
+### Discussion
 NLP is not perfect; but the data suggests the following: 
 
 1. While Disneyland is well-reviewed based on quntitative metrics. The text that accompanies reviews on Trip Advisor shows some common themes among negative reviews. 
