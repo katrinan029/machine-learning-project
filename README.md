@@ -27,3 +27,11 @@ Also, this project will explore the limitations of quantitative data; and demons
 * [Katrina](https://github.com/katrinan029)
 * [Ryan](https://github.com/lmfao415)
 * [Jessica](https://github.com/jessicaramosmolina)
+
+### Observations
+NLP is not perfect; but the data suggests the following: 
+
+1. While Disneyland is well-reviewed based on quntitative metrics. The text that accompanies reviews on Trip Advisor shows some common themes among negative reviews. 
+Terms such as "waste", "junk", "overcrowded", "people", and "children" are more relevant in negative reviews. One-time events like evacuations appear in some unusually negative reviews. If Disney Parks are interested in imprving their guest services, these areas might be good places to start. 
+
+2. NLG-models fed only positive reviews tend to give more insight aut the overall aggregate sentiment about Disneyland than simple NLP procedures. When language is decontextualized as is often the case in many NLP procedures, the results can often be misleading. 
