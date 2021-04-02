@@ -1,6 +1,7 @@
 # Project SIMPLE: Service Improvement through Machine Processing of Linguistic Evaluations
 ## Keep it Simba’l
 ![](project_logo.png)
+
 Customer Relations Management (CRM) has long struggled with the problem that star reviews fail to give enough nuance about what their clients/customers are really feeling. This plays into the limitations that have long plagued quantitative data. Fortunately qualitative text reviews often accompany star reviews. However, text reviews are voluminous and qualitative analysi can often be too verbose to understnd. Natural Language Processing (NLP) is one potential solution to this old quantification versus qualification debate. Linguistic analysis can inform quantitative data and reveal additional dimensions and insights about massive amounts of textual data. In this example, an example of how NLP can be leveraged to inform CRM is provided by sifting through Disneyland reviews. 
 
 ## Machine Learning Project
@@ -26,3 +27,11 @@ Also, this project will explore the limitations of quantitative data; and demons
 * [Katrina](https://github.com/katrinan029)
 * [Ryan](https://github.com/lmfao415)
 * [Jessica](https://github.com/jessicaramosmolina)
+
+### Observations
+NLP is not perfect; but the data suggests the following: 
+
+1. While Disneyland is well-reviewed based on quntitative metrics. The text that accompanies reviews on Trip Advisor shows some common themes among negative reviews. 
+Terms such as "waste", "junk", "overcrowded", "people", and "children" are more relevant in negative reviews. One-time events like evacuations appear in some unusually negative reviews. If Disney Parks are interested in imprving their guest services, these areas might be good places to start. 
+
+2. NLG-models fed only positive reviews tend to give more insight aut the overall aggregate sentiment about Disneyland than simple NLP procedures. When language is decontextualized as is often the case in many NLP procedures, the results can often be misleading. 
