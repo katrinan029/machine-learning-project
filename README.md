@@ -42,7 +42,11 @@ Terms such as "waste", "junk", "overcrowded", "people", and "children" are more 
 
 3. Context matters in Textual Data as frequencies can be a misleading metric. For example, the word "park" can be interpreted in multiple ways according to context, Idioms, and non-English terms might not be well-handled by tools like NLTK. It also cannot be assumed that NLTK can correctly process text with perfect efficacy and accuracy.  
 
-4. However, it is apparent that the long-held dichotomy between quantified data, and qualitative data is a false one. Technology is beginning to make it possible to  condensequalitative data in a way that will be comprehensible to a casual observer. Thhe applications of this go beyond aiding CRM. Academic research, HR decisions, legal documents, social media, and government communications can all be aided by good NLP.  
+4. However, it is apparent that the long-held dichotomy between quantified data, and qualitative data is a false one. Technology is beginning to make it possible to  condensequalitative data in a way that will be comprehensible to a casual observer. Thhe applications of this go beyond aiding CRM. Academic research, HR decisions, legal documents, social media, and government communications can all be aided by good NLP. 
+ 
+### ReviewCow
+Natural Language Generation is one way to condense the contents of a large corpus. The ReviewCow NLG model was trained using the text of the approximately 42,000 reviews in the SIMPLE dataset. As a result, it will geerate sentences based on randomly generated tar words, and chain them to more words based on statistical probabilities. 
+![](Images/)
 
 ### Deployment 
 The output of the NLP analysis was deployed with interactive visualizations and a fuller discussion at Heroku which can be found at this [link](https://keep-it-simbal.herokuapp.com/)
