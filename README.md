@@ -46,7 +46,7 @@ Terms such as "waste", "junk", "overcrowded", "people", and "children" are more 
  
 ### ReviewCow
 Natural Language Generation is one way to condense the contents of a large corpus. The ReviewCow NLG model was trained using the text of the approximately 42,000 reviews in the SIMPLE dataset. As a result, it will geerate sentences based on randomly generated tar words, and chain them to more words based on statistical probabilities. 
-![](Images/)
+![](Images/ReviewCow.png)
 
 ### Deployment 
 The output of the NLP analysis was deployed with interactive visualizations and a fuller discussion at Heroku which can be found at this [link](https://keep-it-simbal.herokuapp.com/)
